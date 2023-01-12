@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
+import { NgCircleProgressModule } from 'ng-circle-progress/public-api';
+import { HysSkillsComponent } from './components/hys-skills/hys-skills.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     BodyComponent,
     LoginComponent,
+    HysSkillsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    // NgCircleProgressModule.forRoot({}),
   ],
   providers: [],
   bootstrap: [AppComponent]

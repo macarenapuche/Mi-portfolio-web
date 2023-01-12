@@ -1,3 +1,26 @@
 .padding{
     padding: 5px
 }
+
+
+.info{
+    width: 100%; 
+    height: auto;
+    padding: 2rem;
+    border:2px solid gray;
+    border-radius: 0.5rem;
+    justify-content: flex-start; /*hace que el texto se alinee empezando de la izquierda (start)*/
+    align-items: flex-start;
+    display: flex; /*hace que el texto se acomode hacia la derecha*/
+}
+
+.info2{
+    width: 100%; 
+    height: auto; 
+    padding: 2rem; /*pone 2 rem de padding de arriba, abajo, icquierda y derecha*/
+    border:2px solid gray;
+    border-radius: 0.5rem; 
+    justify-content: flex-start; /*hace que el texto se alinee empezando de la izquierda (start)*/
+    align-items: center; /*hace que el texto se centre verticalmente*/
+    display: flex column; /*hace que el texto se acomode en forma de columna*/
+}
