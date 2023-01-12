@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
-import { NgCircleProgressModule } from 'ng-circle-progress/public-api';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysSkillsComponent } from './components/hys-skills/hys-skills.component';
 
 @NgModule({
@@ -23,7 +23,14 @@ import { HysSkillsComponent } from './components/hys-skills/hys-skills.component
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    // NgCircleProgressModule.forRoot({}),
+    NgCircleProgressModule.forRoot({
+      radius: 100,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#78C000",
+      innerStrokeColor: "#C7E596",
+      animationDuration: 300,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
