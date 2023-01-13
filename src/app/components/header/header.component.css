@@ -2,3 +2,11 @@ imglogos{
     width: 25px;
     padding-top: 0px; 
 }
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.25rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
